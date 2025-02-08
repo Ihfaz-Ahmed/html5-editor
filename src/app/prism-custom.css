@@ -1,0 +1,106 @@
+/* Custom Prism.js theme overrides */
+pre[class*="language-"] {
+  background: #ffffff !important;
+  font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 1em;
+  margin: 0;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  word-break: break-all;
+  outline: none !important;
+  cursor: text;
+}
+
+pre[class*="language-"]:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #000 !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+.dark pre[class*="language-"],
+.dark code[class*="language-"] {
+  background: #1e293b !important;
+  color: #fff !important;
+}
+
+.token.tag {
+  color: #0000ff;
+}
+
+.dark .token.tag {
+  color: #60a5fa;
+}
+
+.token.attr-name {
+  color: #008000;
+}
+
+.dark .token.attr-name {
+  color: #34d399;
+}
+
+.token.attr-value,
+.token.string {
+  color: #ff0000;
+}
+
+.dark .token.attr-value,
+.dark .token.string {
+  color: #f87171;
+}
+
+.token.comment {
+  color: #666666;
+}
+
+.dark .token.comment {
+  color: #9ca3af;
+}
+
+/* Line numbers */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #e5e7eb;
+  padding-right: 1em;
+}
+
+.dark .line-numbers .line-numbers-rows {
+  border-right-color: #374151;
+}
+
+/* Scrollbar styles */
+pre[class*="language-"]::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+} 
